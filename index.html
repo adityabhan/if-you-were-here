@@ -1,155 +1,129 @@
-```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>If You Were Here</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-
-
-<body>
-
-
+  <body>
     <!-- =================================
          INTRO
     ================================= -->
 
-    <section
-        class="scene intro"
-        id="intro"
-    >
+    <section class="scene intro" id="intro">
+      <div class="intro-content">
+        <h1>I wanted to send you something.</h1>
 
-        <div class="intro-content">
+        <p>But then I realized...</p>
 
-            <h1>
-                I wanted to send you something.
-            </h1>
+        <p>some things can't really be sent.</p>
 
-            <p>
-                But then I realized...
-            </p>
-
-            <p>
-                some things can't really be sent.
-            </p>
-
-            <button id="continue-button">
-                look up ↑
-            </button>
-
-        </div>
-
+        <button id="continue-button">look up ↑</button>
+      </div>
     </section>
-
-
 
     <!-- =================================
          NIGHT SKY
     ================================= -->
 
-    <section
-        class="scene night-sky"
-        id="night-sky"
-    >
+    <section class="scene night-sky" id="night-sky">
+      <!-- Background stars -->
 
-        <!-- Background stars -->
+      <div class="stars" id="stars"></div>
 
-        <div
-            class="stars"
-            id="stars"
-        ></div>
+      <!-- Moon -->
 
+      <div class="moon"></div>
 
-        <!-- Moon -->
+      <!-- Introduction message -->
 
-        <div class="moon"></div>
+      <div class="sky-message" id="sky-message">
+        <p>I remember you telling me</p>
 
+        <p>you like looking at the moon.</p>
 
-        <!-- Introduction message -->
+        <p class="pause">So I thought...</p>
 
-        <div
-            class="sky-message"
-            id="sky-message"
-        >
+        <p>maybe I could leave you</p>
 
-            <p>
-                I remember you telling me
-            </p>
+        <p>a few stars.</p>
+      </div>
 
-            <p>
-                you like looking at the moon.
-            </p>
+      <!-- =================================
+     MEMORY CARD
+================================= -->
 
-            <p class="pause">
-                So I thought...
-            </p>
+      <div class="memory-card" id="memory-card">
+        <button class="close-card" id="close-card" aria-label="Close">×</button>
 
-            <p>
-                maybe I could leave you
-            </p>
+        <div class="memory-content">
+          <span class="memory-label" id="memory-label"> a little memory </span>
 
-            <p>
-                a few stars.
-            </p>
+          <p class="memory-text" id="memory-text"></p>
 
-        </div>
-
-
-        <!-- =================================
-             MEMORY CARD
-        ================================= -->
-
-        <div
-            class="memory-card"
-            id="memory-card"
-        >
-
-            <button
-                class="close-card"
-                id="close-card"
-                aria-label="Close"
-            >
-                ×
+          <!-- MUSIC PLAYER -->
+          <div class="music-player" id="music-player">
+            <button class="play-button" id="play-button" aria-label="Play song">
+              ▶
             </button>
 
-
-            <div class="memory-content">
-
-                <span
-                    class="memory-label"
-                    id="memory-label"
-                >
-                    a little memory
-                </span>
-
-
-                <p
-                    class="memory-text"
-                    id="memory-text"
-                ></p>
-
+            <div class="music-info">
+              <span class="music-title">Play me</span>
             </div>
+          </div>
 
+          <span class="memory-progress" id="memory-progress">
+            1 of 5 stars found
+          </span>
         </div>
+      </div>
 
+      <!-- =================================
+     FINAL STAR
+================================= -->
+
+      <div class="final-star" id="final-star" aria-label="A hidden star"></div>
+
+      <!-- =================================
+     FINAL REVEAL
+================================= -->
+
+      <div class="final-reveal" id="final-reveal">
+        <div class="final-content">
+          <p class="final-line" id="final-line-1">You found the last one.</p>
+
+          <p class="final-line" id="final-line-2">But I think I was wrong.</p>
+
+          <p class="final-line" id="final-line-3">
+            I didn't really want to send you a few stars.
+          </p>
+
+          <p class="final-line" id="final-line-4">
+            I wanted to send you the feeling of looking at the same sky as you.
+          </p>
+
+          <p class="final-line" id="final-line-5">You, looking at the moon.</p>
+
+          <p class="final-line" id="final-line-6">Me, looking at the stars.</p>
+
+          <p class="final-line" id="final-line-7">
+            And somehow wishing you were here.
+          </p>
+
+          <!-- <p class="final-ending" id="final-ending">
+            If you were here,<br />
+            I think I'd just look at the sky with you.
+          </p> -->
+          <p class="goodnight" id="goodnight">Goodnight Sammy</p>
+        </div>
+      </div>
     </section>
 
-
-
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
-```
